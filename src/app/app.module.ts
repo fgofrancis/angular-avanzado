@@ -14,6 +14,8 @@ import { AppComponent } from './app.component';
 
 import { PagesModule } from './pages/pages.module';
 import { AuthModule } from './auth/auth.module';
+import { ComponentsModule } from './components/components.module';
+
 
 
 @NgModule({
@@ -28,9 +30,10 @@ import { AuthModule } from './auth/auth.module';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule
+    AuthModule,
+    ComponentsModule
   ],
-  providers: [],
+   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
