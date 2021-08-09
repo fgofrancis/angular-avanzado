@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { Grafica1Component } from './grafica1/grafica1.component';
-import { NopagefoundComponent } from '../nopagefound/nopagefound.component';
 import { PagesComponent } from './pages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
+import { Grafica1Component } from './grafica1/grafica1.component';
+import { AccountSettingComponent } from './account-setting/account-setting.component';
 
 const routes: Routes = [
-  { path: '',
+  {
+   path: '',
    component: PagesComponent,
     children: [
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'grafica1' , component: Grafica1Component  },
+      { path: '', component: DashboardComponent },
       { path: 'progress' , component: ProgressComponent  },
+      { path: 'grafica1' , component: Grafica1Component  },
+      { path: 'account-setting' , component: AccountSettingComponent  },
     ]
  }
 ];
