@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 //Modulos
@@ -14,6 +14,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AccountSettingComponent } from './account-setting/account-setting.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
+import { HospitalesComponent } from './mantenimientos/hospitales/hospitales.component';
+import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 
@@ -26,13 +30,18 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     DashboardComponent,
     AccountSettingComponent,
     PromesasComponent,
-    RxjsComponent
+    RxjsComponent,
+    UsuariosComponent,
+    HospitalesComponent,
+    MedicosComponent,
+    PerfilComponent
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     SharedModule,
     FormsModule,
+    ReactiveFormsModule,
     ComponentsModule,
    
    ],
