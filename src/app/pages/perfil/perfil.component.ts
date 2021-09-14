@@ -54,8 +54,7 @@ export class PerfilComponent implements OnInit {
     if(!file){ 
       return this.imgTemp = null;
     }
-
-    
+ 
     const reader = new FileReader();
     reader.readAsDataURL( file );
 

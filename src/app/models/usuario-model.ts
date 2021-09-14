@@ -16,11 +16,12 @@ constructor (
 
 get imagenUrl(){
     // http://localhost:3000/api/uploads/usuarios/no-imagen 
-    if (this.img?.includes('https') ){
+
+    if (!this.img) {
+        return  `${ base_url }/uploads/usuarios/no-image`;
+    }else if (this.img?.includes('https') ){
         return this.img
-    }
-    
-    if (this.img ){
+    }else if (this.img ){
         return `${ base_url }/uploads/usuarios/${this.img}`;
     }else{
         return  `${ base_url }/uploads/usuarios/no-image`;
