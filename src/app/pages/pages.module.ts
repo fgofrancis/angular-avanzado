@@ -7,6 +7,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
+import { PipesModule } from '../pipes/pipes.module';
 
 import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -19,6 +20,7 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
 import { HospitalesComponent } from './mantenimientos/hospitales/hospitales.component';
 import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
+import { MedicoComponent } from './mantenimientos/medicos/medico.component';
 
 
 
@@ -36,6 +38,7 @@ import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
     UsuariosComponent,
     HospitalesComponent,
     MedicosComponent,
+    MedicoComponent,
   ],
   imports: [
     CommonModule,
@@ -43,7 +46,8 @@ import { MedicosComponent } from './mantenimientos/medicos/medicos.component';
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-    ComponentsModule
+    ComponentsModule,
+    PipesModule
    
    ],
    exports: [ ] //El exporta todo lo declarations pero yo no, no le veo sentido si voy a usar el modulo

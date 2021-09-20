@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# recursos, estos son los codigo del autor del curso
+/recursos
+
 # compiled output
 /dist
 /tmp
