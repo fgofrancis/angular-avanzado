@@ -43,6 +43,13 @@ export class BusquedasService {
   private transformarMedicos(resultados:any[]): Medico[]{
     return resultados;
   }
+  busquedaGlobal(termino: string){
+
+    const url = `${ base_url}/todos/${termino}`;
+    console.log('url' + url);
+    return this.http.get(url, this.headers );
+
+  }
 
   buscar(
      tipo: 'usuarios'|'medicos'|'hospitales',
