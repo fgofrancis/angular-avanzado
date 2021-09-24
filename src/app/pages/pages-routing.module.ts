@@ -22,7 +22,7 @@ import { AdminGuard } from '../guards/admin.guard';
 
 const routes: Routes = [
   {
-   path: '',
+   path: '', 
    component: PagesComponent,
    canActivate: [AuthGuard],
     children: [
